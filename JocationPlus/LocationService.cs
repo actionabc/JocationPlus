@@ -146,9 +146,10 @@ namespace LocationCleaned
 
             if (!File.Exists($"{basePath}{shortVersion}/inject.dmg"))
             {
-                PrintMessage($"未找到 {shortVersion} 驱动版本,请前往下载驱动后重新加载设备 .");
-                System.Windows.Forms.MessageBox.Show($"未找到 {shortVersion} 驱动版本,请前往下载驱动后重新加载设备 .");
-                Process.Start("https://github.com/quxiaozha/JocationPlus/tree/master/drivers");
+                //PrintMessage($"未找到 {shortVersion} 驱动版本,请前往下载驱动后重新加载设备 .");
+                /// System.Windows.Forms.MessageBox.Show($"未找到 {shortVersion} 驱动版本,请前往下载驱动后重新加载设备 .");
+                //Process.Start("https://github.com/quxiaozha/JocationPlus/tree/master/drivers");
+                //PrintMessage($"https://github.com/quxiaozha/JocationPlus/tree/master/drivers");
                 return;
             }
             Process.Start(new ProcessStartInfo
